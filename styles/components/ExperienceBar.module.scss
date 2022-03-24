@@ -1,0 +1,32 @@
+// @import 'variable.scss';
+
+.container {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  & > div {
+    flex: 1;
+    margin: 0 1.5rem;
+    height: 2px;
+    background-color: var(--gray-line);
+    position: relative;
+
+    div {
+      height: 2px;
+      background-color: var(--green);
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      right: -1.3rem;
+      top: 0.3rem;
+    }
+  }
+
+}
+

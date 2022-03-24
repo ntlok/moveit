@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  max-width: 389px;
+
+  img {
+    margin-left: 1rem;
+    width: 50px;
+  }
+
+  button {
+    height: 5rem;
+    width: 100%;
+    background-color: var(--main-blue);
+    border: none;
+    border-radius: .3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+  } 
+  
+  .buttonAbort {
+    background-color: #fff;
+    color: var(--text);
+    transition: all 300ms ease;
+
+    &:hover {
+      background-color: var(--red);
+      color: #fff;
+    }
+  }
+
+  .buttonFinished {
+    background: #fff;
+    color: var(--text);
+    cursor: not-allowed;
+  }
+
+  .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: 3px;
+    background-color: var(--green);
+    border-radius: 5px;
+  }
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;  
+  max-height: 150px;
+  height: 100%;
+
+  @media (max-width: 720px) {
+    margin-top: 1rem;
+  }
+
+  p, span {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  p {
+    font-size: 120px;
+    margin: 0 auto;
+  }
+
+  
+
+  span {
+    font-size: 120px;
+    background-color: #fff;
+    padding: .5rem;
+    display: flex;
+    line-height: 1;
+    width: 72px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    &:first-child {
+      margin-right: .3rem;
+    }
+
+    &:last-child {
+      margin-left: 0.3rem;
+    }
+  }
+
+}
+

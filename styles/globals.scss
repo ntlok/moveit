@@ -1,0 +1,37 @@
+:root {
+  --main-blue: #5965E0;
+  --blue-dark: #4953B8;
+  --green: #4CD62B;
+  --red: #E83F5B;
+  --text-blue: #B2B9FF;
+  --title: #2E384D;
+  --text: #666666;
+  --gray-line: #DCDDE0;
+  --background: #F2F3F5;
+
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text)
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
